@@ -1,5 +1,5 @@
 FROM jenkins/jenkins:lts
-
+USER root
 RUN apt-get update && apt-get upgrade -y && apt-get install -y git curl && rm -rf /var/lib/apt/lists/*
 
 ARG user=jenkins
