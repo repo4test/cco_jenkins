@@ -3,7 +3,7 @@ USER root
 RUN apt-get update && apt-get upgrade -y && apt-get install -y git curl && rm -rf /var/lib/apt/lists/*
 
 ARG user=jenkins
-ARG group=jenkins
+#ARG group=jenkins
 ARG uid=1000
 ARG gid=1000
 ARG http_port=8080
